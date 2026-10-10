@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b20">
+  <meta name="description" content="Fortnite IA, assistant non officiel pour conseils, stratégies et entraînement Fortnite.">
+  <title>Fortnite IA — Ton assistant gaming</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="background-glow"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Fortnite IA accueil"><span>FORTNITE</span> <b>IA</b></a>
+    <nav><a class="active" href="#accueil">⌂ Accueil</a><a href="#chat">▣ Chat IA</a><a href="#apropos">ⓘ À propos</a></nav>
+    <span class="status"><i></i> ASSISTANT EN LIGNE</span>
+  </header>
+
+  <main id="accueil">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> TON COÉQUIPIER INTELLIGENT</div>
+        <h1>FORTNITE <em>IA</em></h1>
+        <p class="subtitle">Passe au niveau supérieur.</p>
+        <p class="intro">Des conseils, des stratégies et des réponses pour t’aider à progresser dans Fortnite. Pose ta question à ton assistant gaming.</p>
+        <div class="features"><span>⚡ Conseils rapides</span><span>◈ Stratégies</span><span>🎮 Entraînement</span></div>
+        <a class="jump" href="#chat">LANCER LE CHAT <span>↘</span></a>
+      </div>
+      <div class="orb" aria-hidden="true"><div class="orb-core">AI</div><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="spark s1">✦</span><span class="spark s2">✧</span></div>
+      <div class="hero-grid"></div>
+    </section>
+
+    <section class="chat-section" id="chat">
+      <div class="section-heading"><div><div class="eyebrow">CENTRE DE COMMANDEMENT</div><h2>Parle avec <em>Fortnite IA</em></h2></div><span class="online-pill"><i></i> PRÊT À AIDER</span></div>
+      <div class="chat-layout">
+        <div class="chat-card">
+          <div class="chat-top"><div class="bot-avatar">✦</div><div><strong>Fortnite IA</strong><small>Assistant gaming · Français</small></div><span class="live-dot"></span></div>
+          <div id="messages" class="messages" aria-live="polite">
+            <div class="message assistant"><span class="mini-avatar">✦</span><div><small>FORTNITE IA</small><p>Salut ! 👋 Je peux t’aider à améliorer ta stratégie, tes réglages, ta construction ou ta visée. Qu’est-ce qu’on travaille aujourd’hui ?</p></div></div>
+          </div>
+          <div class="typing" id="typing" hidden><span></span><span></span><span></span> L’IA réfléchit…</div>
+          <form id="chat-form" class="composer">
+            <label class="sr-only" for="question">Ta question</label>
+            <textarea id="question" rows="1" maxlength="2000" placeholder="Pose ta question sur Fortnite…" required></textarea>
+            <button id="send" type="submit" aria-label="Envoyer la question">➤</button>
+          </form>
+          <div class="chat-foot"><span>↵ Entrée pour envoyer · Maj + Entrée pour une nouvelle ligne</span><span id="mode-label">MODE DÉMO SI CLÉ API ABSENTE</span></div>
+        </div>
+        <aside class="suggestions"><h3>✧ QUESTIONS À ESSAYER</h3><p>Choisis un sujet pour démarrer.</p>
+          <button class="suggestion" data-question="Comment améliorer ma visée sur Fortnite ?"><span>⌖</span><span><b>Améliorer ma visée</b><small>Précision et entraînement</small></span><strong>↗</strong></button>
+          <button class="suggestion" data-question="Donne-moi des conseils pour progresser en construction."><span>▦</span><span><b>Progresser en construction</b><small>Techniques et réflexes</small></span><strong>↗</strong></button>
+          <button class="suggestion" data-question="Quels réglages puis-je tester pour mieux jouer au clavier et à la souris ?"><span>⚙</span><span><b>Optimiser mes réglages</b><small>Confort et contrôle</small></span><strong>↗</strong></button>
+          <button class="suggestion" data-question="Comment mieux choisir mes rotations et mes positions en Battle Royale ?"><span>◉</span><span><b>Mieux jouer en Battle Royale</b><small>Placement et décisions</small></span><strong>↗</strong></button>
+          <div class="privacy-note">🛡️ <span>Ne partage jamais ton mot de passe, tes codes de connexion ou des informations personnelles.</span></div>
+        </aside>
+      </div>
+    </section>
+    <section class="about" id="apropos"><span class="about-icon">✦</span><div><h2>Un assistant fait pour les joueurs.</h2><p>Fortnite IA est un projet indépendant de fans, conçu pour donner des conseils de jeu. Il n’est ni créé ni approuvé par Epic Games.</p></div><span class="about-tag">FAN PROJECT</span></section>
+    <footer><a class="brand small" href="#"><span>FORTNITE</span> <b>IA</b></a><span>Projet indépendant · Non affilié à Epic Games</span><span>© <span id="year"></span> Fortnite IA</span></footer>
+  </main>
+  <script src="/script.js"></script>
+</body>
+</html>
